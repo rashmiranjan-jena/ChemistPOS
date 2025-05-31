@@ -1,0 +1,233 @@
+.navbar-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 15px;
+  position: relative;
+}
+
+/* Left Section */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Middle Section */
+.store-name {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0 15px; /* Add some spacing on both sides */
+}
+
+.store-name h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+/* Right Section */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Wave animation for each character */
+.wave-text {
+  display: inline-flex;
+  align-items: center;
+}
+
+.wave-char {
+  display: inline-block;
+  color: #318ABF;
+}
+
+.wave-char.animate {
+  animation: wave 1.5s infinite;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Change text color on hover */
+.store-name:hover h4 {
+  color: #ff6f61;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .navbar-header {
+    padding: 0 10px;
+  }
+
+  .store-name h4 {
+    font-size: 1.1rem; /* Smaller font size on mobile */
+  }
+
+  .navbar-left {
+    margin-right: 10px; /* Reduced margin */
+  }
+
+  .navbar-right {
+    flex-shrink: 0;
+  }
+
+  .toggle-btn {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  .navbar-brand-box {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .store-name h4 {
+    font-size: 0.9rem; /* Even smaller on very small screens */
+  }
+
+  .navbar-left {
+    margin-right: 5px;
+  }
+
+  .toggle-btn {
+    padding: 0 8px;
+  }
+}
+
+/* Ensure toggle button stays on the left */
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #fff;
+}
+
+.toggle-btn:hover {
+  color: #00c4b4;
+}
+
+
+.navbar-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 15px;
+  position: relative;
+}
+
+/* Left Section */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Middle Section */
+.store-name {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0 15px; /* Add some spacing on both sides */
+}
+
+.store-name h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  display: inline-block;
+}
+
+/* Wave animation for each character */
+.wave-text {
+  display: inline-flex;
+  align-items: center;
+}
+
+.wave-char {
+  display: inline-block;
+}
+
+.wave-char.animate {
+  animation: wave 1.5s infinite;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Change text color on hover for each part */
+.store-name:hover .wave-char:nth-child(-n+7) { /* Vichaar (7 chars) */
+  color: #4a9ed1;
+}
+.store-name:hover .wave-char:nth-child(n+8):nth-child(-n+11) { /* Mart (4 chars) */
+  color: #ff8c3a;
+}
+.store-name:hover .wave-char:nth-child(n+12) { /* Pharmacy (8 chars) */
+  color: #33d4c7;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .navbar-header {
+    padding: 0 10px;
+  }
+
+  .store-name h4 {
+    font-size: 1.1rem; /* Smaller font size on mobile */
+  }
+
+  .navbar-left {
+    margin-right: 10px; /* Reduced margin */
+  }
+
+  .navbar-right {
+    flex-shrink: 0;
+  }
+
+  .toggle-btn {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  .navbar-brand-box {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .store-name h4 {
+    font-size: 0.9rem; /* Even smaller on very small screens */
+  }
+
+  .navbar-left {
+    margin-right: 5px;
+  }
+
+  .toggle-btn {
+    padding: 0 8px;
+  }
+}
+
+/* Ensure toggle button stays on the left */
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #fff;
+}
+
+.toggle-btn:hover {
+  color: #00c4b4;
+}

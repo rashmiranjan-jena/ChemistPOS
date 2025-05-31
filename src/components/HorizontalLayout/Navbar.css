@@ -1,0 +1,118 @@
+/* Navbar container */
+.topnav {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  min-height: 50px; /* Reduced height */
+}
+
+/* Navbar menu */
+.topnav-menu {
+  padding: 0;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  color: #495057;
+  font-size: 14px; /* Smaller font for reduced height */
+  padding: 10px 15px; /* Reduced padding */
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+/* Dropdown toggle */
+.nav-link.dropdown-toggle::after {
+  display: none; /* Hide default Bootstrap arrow */
+}
+
+.arrow-down {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+  vertical-align: middle;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  margin-top: 0;
+  min-width: 200px;
+}
+
+.dropdown-item {
+  font-size: 14px;
+  padding: 8px 15px;
+  color: #495057;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #007bff;
+}
+
+/* Active states */
+.nav-link.active,
+.dropdown-item.active {
+  color: #007bff !important;
+  background-color: transparent !important;
+}
+
+/* Ensure navbar-collapse is visible when open */
+.navbar-collapse {
+  display: none;
+}
+
+.navbar-collapse.show {
+  display: block;
+}
+
+/* Navbar toggler for mobile */
+.navbar-toggler {
+  border: none;
+  padding: 5px 10px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Responsive adjustments */
+@media (min-width: 992px) {
+  .navbar-collapse {
+    display: flex !important;
+  }
+  .navbar-toggler {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    padding: 10px 0;
+  }
+  .nav-item {
+    margin: 5px 0;
+  }
+  .dropdown-menu {
+    border: none;
+    box-shadow: none;
+    padding-left: 15px;
+  }
+}
